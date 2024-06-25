@@ -9,13 +9,13 @@ features, which you can see in `iterating.py`.
 ## Structured Datasets
 
 Flyte comes with its own type system, supporting almost all of the
-[built-in Python types](https://docs.flyte.org/projects/cookbook/en/latest/auto/core/type_system/flyte_python_types.html#sphx-glr-auto-core-type-system-flyte-python-types-py),
-but it also exposes a [`StructuredDataset`](https://docs.flyte.org/projects/cookbook/en/latest/auto/core/type_system/structured_dataset.html) type,
+[built-in Python types](https://docs.flyte.org/en/latest/user_guide/data_types_and_io/index.html),
+but it also exposes a [`StructuredDataset`](https://docs.flyte.org/en/latest/user_guide/data_types_and_io/structureddataset.html) type,
 which we can use to create types for objects like `pandas.DataFrame`s.
 
 ## Caching
 
-Add `cache=True` with a `cache_version` string to the `@task` decorator to [cache](https://docs.flyte.org/projects/cookbook/en/latest/auto/core/flyte_basics/task_cache.html#sphx-glr-auto-core-flyte-basics-task-cache-py) the output of the task. This
+Add `cache=True` with a `cache_version` string to the `@task` decorator to [cache](https://docs.flyte.org/en/latest/user_guide/development_lifecycle/caching.html) the output of the task. This
 will ensure that you don't re-run the task if you give it the same exact inputs.
 
 ## Retries

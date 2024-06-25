@@ -5,7 +5,7 @@ Flyte also provides built-in constructs for parallelizing your tasks.
 <!-- button: Open Python Workflow -->
 
 In this example, we're extending our training workflow to implement a simple
-gridsearch workflow leveraging the [`map_task`](https://docs.flyte.org/projects/cookbook/en/latest/auto/core/control_flow/map_task.html#) construct.
+gridsearch workflow leveraging the [`map_task`](https://docs.flyte.org/en/latest/user_guide/advanced_composition/map_tasks.html) construct.
 
 When using `map_task`s, the `@task` function being mapped over can take only
 a single argument. To implement our gridsearch workflow, we update our workflow
